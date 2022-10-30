@@ -65,6 +65,6 @@ class RafflesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def raffle_params
-      params.require(:raffle).permit(:number, :name, :status)
+      params.require(:raffle).permit(:number, :name, :phone_number)
     end
 end

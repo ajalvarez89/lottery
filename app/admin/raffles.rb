@@ -10,7 +10,7 @@ ActiveAdmin.register Raffle do
   # or
   #
   permit_params do
-    permitted = [:number, :name, :status]
+    permitted = [:number, :name, :status, :phone_number]
     permitted << :other if params[:action] == 'create' && current_user.admin?
     permitted
   end
